@@ -43,7 +43,8 @@ p {
     font-size: 14px;
 }
 
-ul, li {
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -510,10 +511,13 @@ span.highlight {
     padding-bottom: 130px;
 }*/
 
-.page-title--about {
+.page-title--about, .page-title--skills {
     text-align: left;
 }
 
+.about {
+    margin: 50px;
+}
 /*.about-subtitle {
     margin-top: 0;
     color: #405A74;
@@ -605,26 +609,31 @@ span.highlight {
     padding-bottom: 130px;
 }*/
 
-/*.bg-usp h4 {
+.usp h5 {
     color: #405a74;
+    font-size: 16px;
     margin: 20px 0;
     text-align: center;
-}*/
+}
 
 /*h4.usp-subheader {
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 16px;
 }*/
 
-.bg-usp .font-awesome-icon {
+.usp .font-awesome-icon {
     margin: 20px;
     text-align: center;
 }
 
-.bg-usp .fa {
+.usp .fa {
     color: #ff9f1e;
+    font-size: 70px;
 }
 
+.usp p {
+    text-align: justify;
+}
 
 /* PACKAGES
    ================================================== */
@@ -644,27 +653,27 @@ span.highlight {
     text-align: center;
 }
 
-.package > h4 {
+.package>h4 {
     color: #ff4c04;
 }
 
-.package > p {
-    color: #222;
+.package>p {
+    color: #333;
     padding: 15px;
     text-align: justify;
 }
 
-.package > p:nth-of-type(2) {
+.package>p:nth-of-type(2) {
     text-align: center;
 }
 
-.package > ul > li {
-    color: #000;
+.package>ul>li {
+    color: #333;
     padding-bottom: 10px;
     list-style: none;
 }
 
-.package > ul> li > hr {
+.package>ul>li>hr {
     border: 1px solid #405a74;
     /*margin-bottom: 0;*/
     /*margin-top: 0;*/
@@ -777,17 +786,26 @@ span.highlight {
     padding: 20px;
 }*/
 
-.refund p {
+/*.refund p {
     background-color: #405a74;
     border: 6px solid #222;
     border-radius: 4px;
     color: #a3c0ce;
     margin-top: 20px;
     padding: 20px;
+}*/
+
+.refund p {
+    background-color: #ECF9BF;
+    border: 6px solid #405a74;
+    border-radius: 4px;
+    color: #333;
+    /*margin: 0 5px;*/
+    padding: 20px;
+    text-align: center;
 }
 
-/* SKILLS
-   ================================================== */
+/* SKILLS */
 
 /*.bg-skills {
     background-color: #202020;
@@ -800,20 +818,29 @@ span.highlight {
     color: #405A74;
 }*/
 
-.bg-skills p {
+/*.bg-skills p {
     padding-right: 40px;
     color: #5E5A5A;
     font-size: 18px;
     line-height: 32px;
     margin-top: 14px;
-}
+}*/
 
 /*.bg-skills h4 {
     color: #ff9f1e;
 }*/
 
+.skills {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.skills > h5 {
+   color: #ff9404;  
+}
+
 .progress {
-    background-color: #000;
+    background-color: #121212;
     border-radius: 4px;
 }
 
@@ -821,11 +848,11 @@ span.highlight {
     background-color: #34495E;
 }
 
-@media (max-width:767px) {
+/*@media (max-width:767px) {
     .bg-skills p {
         padding-right: 0px;
     }
-}
+}*/
 
 /* SERVICES */
 
@@ -839,23 +866,40 @@ span.highlight {
     margin-top: 0;
 }*/
 
-.bg-services p {
-    color: #5E5A5A;
+.services > h5 {
+    color: #405a74;
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: left;
 }
 
-.bg-services .row .fa {
+.services>p {
+    color: #5e5a5a;
+}
+
+
+.services-icon {
+    font-size: 58px;
+    text-align: right;
+    color: #ff9f1e;
+    padding-top: 15px;
+    /*margin: 0px;*/
+}
+
+/*.bg-services .row .fa {
     width: 40px;
     text-align: center;
     padding-top: 10px;
     color: #FF9F1E;
+}*/
+
+.fa-mobile {
+    font-size: 86px;
+    padding-top: 0px;
+    padding-left: 8px;
 }
 
-.bg-services .row .fa-mobile {
-    font-size: 80px;
-    padding-top: 0;
-}
-
-@media (max-width:767px) {
+/*@media (max-width:767px) {
 
     .bg-services h3,
     .bg-services p {
@@ -873,7 +917,7 @@ span.highlight {
         font-size: 80px;
         padding-top: 0px;
     }
-}
+}*/
 
 /* SERVICES-END */
 
