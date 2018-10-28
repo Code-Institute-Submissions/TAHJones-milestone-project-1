@@ -233,6 +233,7 @@ span.highlight {
 }*/
 
 /*change color and position of hamburger icon-bar*/
+
 .navbar-default .navbar-toggle {
     border: 2px solid #000;
     background-color: #202020;
@@ -247,11 +248,11 @@ span.highlight {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-background-color: #FF9404;
+    background-color: #FF9404;
 }
 
 .navbar-default .navbar-toggle .icon-bar:hover {
-background-color: #FF4C04;
+    background-color: #FF4C04;
 }
 
 .navbar-brand {
@@ -399,12 +400,11 @@ background-color: #FF4C04;
     position: relative;
     top: 0px;
     font-family: 'Cabin', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     max-width: 700px;
     margin: 0 auto 10px;
     text-align: center;
     text-transform: uppercase;
-    line-height: 66px;
     -webkit-animation-duration: 0.8s;
     animation-duration: 0.8s;
     -webkit-animation-fill-mode: both;
@@ -418,10 +418,16 @@ background-color: #FF4C04;
 .banner-subtitle {
     color: #a8a8cc;
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 40px;
-    margin-top: 30px;
+    font-size: 30px;
+    margin: 30px 0 50px;
     text-align: center;
 }
+
+/*.banner-subtitle {
+    color: #a8a8cc;
+    font-size: 40px;
+    margin-top: 15px;
+}*/
 
 /* ANIMATION */
 
@@ -474,13 +480,15 @@ background-color: #FF4C04;
     margin: 0 auto;
 }
 
-@media (max-width:767px) {
+@media (min-width:768px) {
 
     .banner-title {
-        font-size: 26px;
-        line-height: 32px;
+        font-size: 50px;
     }
 
+    .banner-subtitle {
+        font-size: 40px;
+    }
     /*.bg-banner .row {
         padding-top: 105px;
         padding-bottom: 65px;
@@ -496,13 +504,6 @@ background-color: #FF4C04;
     text-align: center;
     width: 85%;
 }*/
-
-.banner-subtitle {
-    color: #a8a8cc;
-    margin: 0 0 50px;
-    font-size: 40px;
-    margin-top: 15px;
-}
 
 /*.banner > div > h3 {
     font-size: 35px;
@@ -533,13 +534,23 @@ background-color: #FF4C04;
     padding-bottom: 130px;
 }*/
 
-.page-title--about, .page-title--skills {
-    text-align: left;
+.page-title--about {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.page-title--about,
+.page-title--skills {
+    text-align: center;
 }
 
 .about {
     margin: 50px;
+    text-align: justify;
 }
+
 /*.about-subtitle {
     margin-top: 0;
     color: #405A74;
@@ -553,10 +564,36 @@ background-color: #FF4C04;
     margin-bottom: 30px;
 }*/
 
-.about-img {
+/*.about-img {
     border-radius: 6px;
-    width: 90%;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}*/
+
+@media (min-width:768px) {
+    .about {
+        margin: 50px;
+    }
+
+    .page-title--about {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .img-div {
+        /*display: inline-block;*/
+        /*position: relative;*/
+        /*height: 50%;*/
+        /*width: 50%;*/
+        /*vertical-align: middle;*/
+        display: flex;
+        align-items: center;
+        /*justify-content: center;*/
+    }
 }
+
+@media (min-width:768px) {}
 
 /*.bg-about h4 {
     color: #ff9f1e;
@@ -653,7 +690,8 @@ background-color: #FF4C04;
     font-size: 16px;
 }
 
-.usp .Responsive-design-specialist { /*mobile icon is larger so margin for h5 header needs to be smaller*/
+.usp .Responsive-design-specialist {
+    /*mobile icon is larger so margin for h5 header needs to be smaller*/
     margin: 30px 10px 20px;
 }
 
@@ -865,8 +903,8 @@ background-color: #FF4C04;
     width: 70%;
 }
 
-.skills > h5 {
-   color: #ff9404;  
+.skills>h5 {
+    color: #ff9404;
 }
 
 .progress {
@@ -885,6 +923,7 @@ background-color: #FF4C04;
 }*/
 
 /* SERVICES */
+
 /*.services {
     margin-bottom: 20px;
 }*/
@@ -893,18 +932,19 @@ background-color: #FF4C04;
     margin-top: 15px;
 }
 
-.font-awesome-icon--services > .fa-mobile {
-    margin: -10px; /*ugly fix to position mobile icon correctly*/
+.font-awesome-icon--services>.fa-mobile {
+    margin: -10px;
+    /*ugly fix to position mobile icon correctly*/
 }
 
-.services > h5 {
+.services>h5 {
     color: #405a74;
     font-size: 16px;
     margin: 10px 0;
     text-align: left;
 }
 
-.services > p {
+.services>p {
     color: #5e5a5a;
 }
 
