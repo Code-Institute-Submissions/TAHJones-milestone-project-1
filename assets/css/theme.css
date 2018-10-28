@@ -612,7 +612,7 @@ span.highlight {
 .usp h5 {
     color: #405a74;
     font-size: 16px;
-    margin: 20px 0;
+    margin: 40px 0 20px;
     text-align: center;
 }
 
@@ -622,7 +622,7 @@ span.highlight {
 }*/
 
 .font-awesome-icon {
-    margin: 20px;
+    /*margin: 20px;*/
     text-align: center;
     font-size: 14px;
 }
@@ -632,10 +632,10 @@ span.highlight {
 }
 
 .usp .Responsive-design-specialist { /*mobile icon is larger so margin for h5 header needs to be smaller*/
-    margin: 12px 10px 20px;
+    margin: 30px 10px 20px;
 }
 
-.usp .fa {
+.font-awesome-icon .fa {
     color: #ff9f1e;
 }
 
@@ -863,16 +863,17 @@ span.highlight {
 }*/
 
 /* SERVICES */
-
-/*.bg-services {
-    padding-top: 0;
-    padding-bottom: 130px;
+/*.services {
+    margin-bottom: 20px;
 }*/
 
-/*.bg-services h3 {
-    color: #405A74;
-    margin-top: 0;
-}*/
+.font-awesome-icon--services {
+    margin-top: 15px;
+}
+
+.font-awesome-icon--services > .fa-mobile {
+    margin: -10px; /*ugly fix to position mobile icon correctly*/
+}
 
 .services > h5 {
     color: #405a74;
@@ -881,30 +882,16 @@ span.highlight {
     text-align: left;
 }
 
-.services>p {
+.services > p {
     color: #5e5a5a;
 }
 
 
-.services-icon {
-    font-size: 58px;
-    text-align: right;
-    color: #ff9f1e;
-    padding-top: 15px;
-    /*margin: 0px;*/
-}
 
-/*.bg-services .row .fa {
-    width: 40px;
-    text-align: center;
-    padding-top: 10px;
-    color: #FF9F1E;
-}*/
-
-.fa-mobile {
+/*.fa-mobile {
     padding-top: 0px;
     padding-left: 8px;
-}
+}*/
 
 /*@media (max-width:767px) {
 
