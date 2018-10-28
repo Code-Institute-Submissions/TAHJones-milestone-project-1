@@ -232,6 +232,28 @@ span.highlight {
     margin-top: 40px;
 }*/
 
+/*change color and position of hamburger icon-bar*/
+.navbar-default .navbar-toggle {
+    border: 2px solid #000;
+    background-color: #202020;
+    color: #ff9f1e;
+    margin: 30px;
+}
+
+.navbar-default .navbar-toggle:hover {
+    border-color: #405a74;
+    background-color: #000;
+    color: #ff9f1e;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #FF9404;
+}
+
+.navbar-default .navbar-toggle .icon-bar:hover {
+background-color: #FF4C04;
+}
+
 .navbar-brand {
     background-image: url(assets/images/logo.svg);
     background-color: #000;
