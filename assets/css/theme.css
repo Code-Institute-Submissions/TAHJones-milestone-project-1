@@ -64,20 +64,22 @@ hr {
     border: solid 2px #405a74;
     padding: 0;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 65px;
 }
+
 
 .page-title {
     margin-top: 0;
     color: #FF9404;
+    font-size: 20px;
     margin-bottom: 15px;
     text-align: center;
 }
 
 .page-subtitle {
     color: #FF4C04;
-    font-size: 20px;
-    margin: 10px 0 50px;
+    font-size: 16px;
+    margin: 10px 40px 50px;
     text-align: center;
 }
 
@@ -89,6 +91,10 @@ hr {
     padding-top: 10px;
 }*/
 
+.margin-bottom-xs {
+    margin-bottom: 50px;
+}
+
 .margin-bottom {
     margin-bottom: 65px;
 }
@@ -97,22 +103,21 @@ span.highlight {
     color: rgba(255, 76, 4, 0.8);
 }
 
-@media (max-width:767px) {
+@media (min-width:768px) {
 
-    body {
-        padding-top: 0px;
+    .page-title {
+        margin-top: 0;
+        /*color: #FF9404;*/
+        font-size: 24px;
+        margin-bottom: 15px;
+        /*text-align: center;*/
     }
 
-    .margin-bottom-xs {
-        margin-bottom: 65px;
-    }
-
-    hr {
-        margin-bottom: 65px;
-    }
-
-    .title {
-        margin-top: 65px;
+    .page-subtitle {
+        /*color: #FF4C04;*/
+        font-size: 20px;
+        margin: 10px 0 50px;
+        /*text-align: center;*/
     }
 }
 
@@ -400,7 +405,7 @@ span.highlight {
     position: relative;
     top: 0px;
     font-family: 'Cabin', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     max-width: 700px;
     margin: 0 auto 10px;
     text-align: center;
@@ -418,7 +423,7 @@ span.highlight {
 .banner-subtitle {
     color: #a8a8cc;
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     margin: 30px 0 50px;
     text-align: center;
 }
@@ -535,7 +540,7 @@ span.highlight {
 }*/
 
 .page-title--about {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -547,7 +552,7 @@ span.highlight {
 }
 
 .about {
-    margin: 50px;
+    margin: 0 50px 50px;
     text-align: justify;
 }
 
@@ -564,12 +569,12 @@ span.highlight {
     margin-bottom: 30px;
 }*/
 
-/*.about-img {
+.about-img {
     border-radius: 6px;
     display: block;
     margin: 0 auto;
-    width: 40%;
-}*/
+    width: 30%;
+}
 
 @media (min-width:768px) {
     .about {
@@ -577,6 +582,7 @@ span.highlight {
     }
 
     .page-title--about {
+        font-size: 30px;
         margin-bottom: 10px;
         text-align: left;
     }
@@ -584,23 +590,59 @@ span.highlight {
     .img-div {
         /*display: inline-block;*/
         /*position: relative;*/
-        /*height: 50%;*/
-        /*width: 50%;*/
+        height: 200px;
+        width: 200px;
         /*vertical-align: middle;*/
-        display: flex;
-        align-items: center;
+        /*display: flex;*/
+        /*align-items: center;*/
         /*justify-content: center;*/
+    }
+
+    .about-img {
+        position: relative;
+        /*top: 50%;*/
+        /*transform: translateY(-50%);*/
+        height: 100%;
+        width: 82%;
+        margin: 100px 0;
+        box-sizing: content-box;
     }
 }
 
-@media (min-width:768px) {}
+@media (min-width:992px) {
+    .about-img {
+        /*position: relative;*/
+        /*top: 50%;*/
+        /*transform: translateY(-50%);*/
+        /*height: 100%;*/
+        /*width: 82%;*/
+        margin: 70px 0;
+        /*box-sizing: content-box;*/
+    }
+}
+
+/*@media (min-width:768px) {}*/
 
 /*.bg-about h4 {
     color: #ff9f1e;
 }*/
 
-/* PORTFOLIO
-   ================================================== */
+/* PORTFOLIO */
+
+.portfolio-img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (min-width:768px) {
+    .portfolio-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 /*.bg-portfolio {
     background-color: #202020;
@@ -701,6 +743,13 @@ span.highlight {
 
 .usp p {
     text-align: justify;
+    margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+     .usp p {
+        margin: 0 40px;
+    }
 }
 
 /* PACKAGES
