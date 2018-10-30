@@ -727,9 +727,9 @@ span.highlight {
 }*/
 
 .font-awesome-icon {
-    /*margin: 20px;*/
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .font-awesome-icon--mobile {
@@ -751,6 +751,11 @@ span.highlight {
 }
 
 @media (min-width: 768px) {
+    .font-awesome-icon {
+        /*margin: 20px;*/
+        text-align: center;
+        font-size: 14px;
+    }
     .usp p {
         margin: 0 40px;
     }
@@ -981,18 +986,33 @@ span.highlight {
     /*ugly fix to position mobile icon correctly*/
 }
 
+.services {
+    margin: 0 0 20px;
+}
+
 .services>h5 {
     color: #405a74;
-    font-size: 16px;
-    margin: 10px 0;
-    text-align: left;
+    font-size: 18px;
+    margin: 10px 0 25px;
+    text-align: center;
 }
 
 .services>p {
     color: #5e5a5a;
 }
 
+@media (min-width:768px) {
+    .services {
+        margin: 0 0 0 15px;
+    }
 
+    .services>h5 {
+        font-size: 16px;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+}
 
 /*.fa-mobile {
     padding-top: 0px;
@@ -1206,10 +1226,12 @@ span.highlight {
 }
 
 .bg-footer p {
-    margin: 0;
+    /*margin: 0 0 0 50px;*/
+    /*margin-right: 50px;*/
     padding: 0;
     color: #3a536b;
-    font-size: 15px;
+    font-size: 12px;
+    line-height: 22px;
 }
 
 .bg-footer ul {
@@ -1232,6 +1254,13 @@ span.highlight {
     padding-right: 12px;
 }
 
+@media (min-width:768px) {
+    .bg-footer p {
+        font-size: 15px;
+        line-height: normal;
+    }
+}
+
 @media (max-width:767px) {
 
     .bg-footer .copyright {
@@ -1243,4 +1272,5 @@ span.highlight {
         text-align: center;
         float: none !important;
     }
+
 }
