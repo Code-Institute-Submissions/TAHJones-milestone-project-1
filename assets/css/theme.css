@@ -79,17 +79,9 @@ hr {
 .page-subtitle {
     color: #FF4C04;
     font-size: 16px;
-    margin: 10px 40px 50px;
+    margin: 10px 40px 60px;
     text-align: center;
 }
-
-/*h4.packages-subheader {
-}
-
-.package>h4 {
-    color: #FF4C04;
-    padding-top: 10px;
-}*/
 
 .margin-bottom-xs {
     margin-bottom: 50px;
@@ -107,17 +99,13 @@ span.highlight {
 
     .page-title {
         margin-top: 0;
-        /*color: #FF9404;*/
         font-size: 24px;
         margin-bottom: 15px;
-        /*text-align: center;*/
     }
 
     .page-subtitle {
-        /*color: #FF4C04;*/
         font-size: 20px;
         margin: 10px 0 50px;
-        /*text-align: center;*/
     }
 
     .margin-bottom-xs {
@@ -272,6 +260,12 @@ span.highlight {
     background-size: cover;
     margin: 10px 0 30px;
     width: 300px;
+}
+
+.nav > li > a {
+    /*position: relative;*/
+    /*display: block;*/
+    padding: 10px 10px;
 }
 
 /* .navbar.tiny .navbar-brand img {
@@ -534,17 +528,10 @@ span.highlight {
 
 /* BANNER-END */
 
-/* ABOUT
-   ================================================== */
-
-/*.bg-about {
-    background-color: #000;
-    padding-top: 130px;
-    padding-bottom: 130px;
-}*/
+/* ABOUT */
 
 .page-title--about {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -559,19 +546,6 @@ span.highlight {
     margin: 0 50px 50px;
     text-align: justify;
 }
-
-/*.about-subtitle {
-    margin-top: 0;
-    color: #405A74;
-}*/
-
-/*.about-subtitle~p {
-    padding-right: 40px;
-    color: #5E5A5A;
-    font-size: 18px;
-    line-height: 32px;
-    margin-bottom: 30px;
-}*/
 
 .about-img {
     border-radius: 6px;
@@ -716,20 +690,15 @@ span.highlight {
 
 .usp h5 {
     color: #405a74;
-    font-size: 16px;
+    font-size: 20px;
     margin: 40px 0 20px;
     text-align: center;
 }
 
-/*h4.usp-subheader {
-    margin-bottom: 50px;
-    font-size: 16px;
-}*/
-
 .font-awesome-icon {
-    margin-bottom: 30px;
+    margin: 20px 0 0;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .font-awesome-icon--mobile {
@@ -738,7 +707,7 @@ span.highlight {
 
 .usp .Responsive-design-specialist {
     /*mobile icon is larger so margin for h5 header needs to be smaller*/
-    margin: 30px 10px 20px;
+    margin: 10px 10px 20px;
 }
 
 .font-awesome-icon .fa {
@@ -752,9 +721,14 @@ span.highlight {
 
 @media (min-width: 768px) {
     .font-awesome-icon {
-        /*margin: 20px;*/
+        margin: 0 0 30px;
         text-align: center;
         font-size: 14px;
+    }
+
+    .usp h5 {
+        font-size: 16px;
+        margin: 10px 0 20px;
     }
     .usp p {
         margin: 0 15px;
@@ -999,6 +973,7 @@ span.highlight {
 
 .services>p {
     color: #5e5a5a;
+    text-align: center;
 }
 
 @media (min-width:768px) {
@@ -1011,6 +986,11 @@ span.highlight {
         margin: 10px 0;
         text-align: left;
     }
+
+    .services>p {
+        text-align: left;
+    }
+
 
 }
 
