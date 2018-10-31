@@ -263,20 +263,8 @@ span.highlight {
 }
 
 .nav > li > a {
-    /*position: relative;*/
-    /*display: block;*/
     padding: 10px 10px;
 }
-
-/* .navbar.tiny .navbar-brand img {
-    width: 22%;
-    margin-top: 28px;
-}*/
-
-/*.navbar.tiny .navbar-brand {
-    margin-top: 3px;
-    width: 250px;
-}*/
 
 .navbar.navbar-default .navbar-nav>li>a {
     color: #405a74;
@@ -288,11 +276,6 @@ span.highlight {
     -moz-transition: padding .22s ease-out;
     -o-transition: padding .22s ease-out;
 }
-
-/*.navbar.tiny .navbar-nav > li > a {
-    padding-top: 18px;
-    padding-bottom: 18px;
-}*/
 
 .navbar.navbar-default .navbar-nav>li>a:hover {
     color: #ff9f1e;
@@ -321,61 +304,6 @@ span.highlight {
     -o-transition: background-color .13s ease-out;
 }
 
-
-/*@media (max-width:767px) {
- 
-    .navbar-default {
-        min-height: 50px;
-    }
-
-    .navbar-default.tiny {
-        min-height: 50px;
-    }
-
-    .navbar.navbar-default .navbar-nav>li>a {
-        padding-top: 8px;
-        padding-bottom: 8px;
-        text-align: center;
-    }
-
-    .navbar.tiny .navbar-nav>li>a {
-        padding-top: 8px;
-        padding-bottom: 8px;
-        text-align: center;
-    }
-
-    .navbar-nav li a .contact {
-        padding: 3px 10px;
-    }
-
-
-    .navbar-brand img {
-        width: 86px;
-        margin-top: 4px;
-    }
-
-    .navbar.tiny .navbar-brand img {
-        width: 86px;
-        margin-top: 4px;
-    }
-
-    .navbar-default .navbar-toggle {
-        background-color: #1BBC9B;
-        border-color: #1BBC9B;
-    }
-
-    .navbar-default .navbar-toggle:hover,
-    .navbar-default .navbar-toggle:active,
-    .navbar-default .navbar-toggle:focus {
-        background-color: #38e2c0;
-        border-color: #38e2c0;
-    }
-
-    .navbar-default .navbar-toggle .icon-bar {
-        background-color: white;
-    }
-}*/
-
 /* BANNER */
 
 .bg-banner {
@@ -393,10 +321,6 @@ span.highlight {
     padding-bottom: 80px;
     margin: 0 -30;
 }
-
-/*.layer-intro {
-    background-color: rgb(34, 49, 63);
-}*/
 
 .banner-title {
     color: #FF9404;
@@ -425,12 +349,6 @@ span.highlight {
     margin: 30px 0 50px;
     text-align: center;
 }
-
-/*.banner-subtitle {
-    color: #a8a8cc;
-    font-size: 40px;
-    margin-top: 15px;
-}*/
 
 /* ANIMATION */
 
@@ -492,39 +410,7 @@ span.highlight {
     .banner-subtitle {
         font-size: 40px;
     }
-    /*.bg-banner .row {
-        padding-top: 105px;
-        padding-bottom: 65px;
-    }*/
 }
-
-/*.banner>div {
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 2px solid #fff;
-    border-radius: 4px;
-    margin: 0 auto;
-    padding: 50px 0;
-    text-align: center;
-    width: 85%;
-}*/
-
-/*.banner > div > h3 {
-    font-size: 35px;
-    margin: 0 0 30px;
-}
-
-.banner > div > h3 > span {
-    color: #ff9f1e;
-}
-
-.banner > div > p > a {
-    color: #FF4C04;
-}
-
-.banner > div > p > a:hover {
-    color: #ff9f1e;
-    text-decoration: underline;
-}*/
 
 /* BANNER-END */
 
@@ -566,20 +452,12 @@ span.highlight {
     }
 
     .img-div {
-        /*display: inline-block;*/
-        /*position: relative;*/
         height: 200px;
         width: 200px;
-        /*vertical-align: middle;*/
-        /*display: flex;*/
-        /*align-items: center;*/
-        /*justify-content: center;*/
     }
 
     .about-img {
         position: relative;
-        /*top: 50%;*/
-        /*transform: translateY(-50%);*/
         height: 100%;
         width: 82%;
         margin: 100px 0;
@@ -589,21 +467,9 @@ span.highlight {
 
 @media (min-width:992px) {
     .about-img {
-        /*position: relative;*/
-        /*top: 50%;*/
-        /*transform: translateY(-50%);*/
-        /*height: 100%;*/
-        /*width: 82%;*/
         margin: 70px 0;
-        /*box-sizing: content-box;*/
     }
 }
-
-/*@media (min-width:768px) {}*/
-
-/*.bg-about h4 {
-    color: #ff9f1e;
-}*/
 
 /* PORTFOLIO */
 
@@ -679,14 +545,7 @@ span.highlight {
     transition: all .2s ease-out;
 }*/
 
-/* UNIQUE SELLING POINT
-   ================================================== */
-
-/*.bg-usp {
-    background-color: #000;
-    padding-top: 0;
-    padding-bottom: 130px;
-}*/
+/* UNIQUE SELLING POINT */
 
 .usp h5 {
     color: #405a74;
@@ -775,12 +634,7 @@ span.highlight {
 
 @media (min-width:768px) {
     .package {
-        /*background-color: #ECF9BF;*/
-        /*border: 6px solid #405a74;*/
-        /*border-radius: 4px;*/
         margin: 0;
-        /*padding: 5px;*/
-        /*text-align: center;*/
     }
 }
 
@@ -858,21 +712,7 @@ span.highlight {
     padding: 20px;
 }
 
-/* REFUND
-   ================================================== */
-
-/*.bg-refund {
-    background-color: #000;
-    padding-top: 0;
-    padding-bottom: 130px;
-}*/
-
-/*h4.refund-subheader {
-    color: #405a74;
-    font-size: 24px;
-    margin-bottom: 50px;
-    text-align: center;
-}*/
+/* REFUND */
 
 .refund {
     margin: 0 20px;
@@ -889,37 +729,7 @@ span.highlight {
     text-align: center;
 }
 
-/*@media (min-width:768px) {
-    .refund {
-        margin: 0 20px;
-        text-align: center;
-    }
-}*/
-
 /* SKILLS */
-
-/*.bg-skills {
-    background-color: #202020;
-    padding-top: 130px;
-    padding-bottom: 130px;
-}*/
-
-/*.bg-skills h2 {
-    margin-top: 0;
-    color: #405A74;
-}*/
-
-/*.bg-skills p {
-    padding-right: 40px;
-    color: #5E5A5A;
-    font-size: 18px;
-    line-height: 32px;
-    margin-top: 14px;
-}*/
-
-/*.bg-skills h4 {
-    color: #ff9f1e;
-}*/
 
 .skills {
     margin: 0 auto;
@@ -938,18 +748,6 @@ span.highlight {
 .progress-bar {
     background-color: #34495E;
 }
-
-/*@media (max-width:767px) {
-    .bg-skills p {
-        padding-right: 0px;
-    }
-}*/
-
-/* SERVICES */
-
-/*.services {
-    margin-bottom: 20px;
-}*/
 
 .font-awesome-icon--services {
     margin-top: 15px;
@@ -990,44 +788,20 @@ span.highlight {
     .services>p {
         text-align: left;
     }
-
-
 }
-
-/*.fa-mobile {
-    padding-top: 0px;
-    padding-left: 8px;
-}*/
-
-/*@media (max-width:767px) {
-
-    .bg-services h3,
-    .bg-services p {
-        padding-left: 12px;
-    }
-
-    .bg-services .row .fa {
-        width: 40px;
-        text-align: center;
-        padding-top: 0px;
-        font-size: 44px;
-    }
-
-    .bg-services .row .fa-mobile {
-        font-size: 80px;
-        padding-top: 0px;
-    }
-}*/
 
 /* SERVICES-END */
 
-/* CONTACT
-   ================================================== */
+/* CONTACT */
 
 .bg-contact {
     background-color: #000;
     color: #FFCD37;
-    padding-bottom: 32px;
+    padding-bottom: 50px;
+}
+
+.page-title--contact {
+    margin-top: 100px;
 }
 
 /* .bg-contact .glyphicon-envelope {
