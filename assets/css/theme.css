@@ -77,7 +77,8 @@ hr {
 }
 
 .page-subtitle {
-    color: #FF4C04;
+    color: #ffcd37;
+    /*color: #FF4C04;*/
     font-size: 16px;
     margin: 10px 40px 60px;
     text-align: center;
@@ -343,7 +344,8 @@ span.highlight {
 }
 
 .banner-subtitle {
-    color: #a8a8cc;
+    color: #ffcd37;
+    /*color: #a8a8cc;*/
     font-family: 'Chakra Petch', sans-serif;
     font-size: 25px;
     margin: 30px 0 50px;
@@ -850,10 +852,13 @@ span.highlight {
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
-    background-color: #B3AEA0;
+    background-color: #b3aea0;
+    /*background-color: #d8c693;*/
+    /*background-color: #ecf9bf;*/
     background-image: none;
-    border: 3px solid #ccc;
-    border-radius: 4px;
+    border: 4px solid #bbb;
+    /*border: 3px solid #405a74;*/
+    /*border-radius: 4px;*/
 }
 
 .form-control:focus {
@@ -879,6 +884,10 @@ span.highlight {
 .form-control::-ms-expand {
     background-color: transparent;
     border: 0;
+}
+
+textarea.form-control {
+    height: 200px;
 }
 
 .btn-submit,
@@ -907,7 +916,7 @@ span.highlight {
     margin-top: 10px;
 }
 
-@media (max-width:767px) {
+/*@media (max-width:767px) {
 
     .bg-contact h3 {
         display: block;
@@ -918,7 +927,7 @@ span.highlight {
     .bg-contact .mail {
         margin: 0;
     }
-}
+}*/
 
 /* SOCIAL */
 
