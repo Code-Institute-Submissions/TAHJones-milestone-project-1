@@ -170,8 +170,8 @@ span.highlight {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 10px 0 30px;
-    width: 300px;
+    margin: 22px 0 30px;
+    width: 150px;
 }
 
 .nav>li>a {
@@ -181,13 +181,18 @@ span.highlight {
 .navbar.navbar-default .navbar-nav>li>a {
     color: #405a74;
     font-size: 15px;
-    margin-left: 10px;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
     transition: padding .22s ease-out;
     -webkit-transition: padding .22s ease-out;
     -moz-transition: padding .22s ease-out;
     -o-transition: padding .22s ease-out;
+}
+
+/*add extra margin above contact link on small screen*/
+
+.navbar.navbar-default .navbar-nav>li:last-child {
+    margin-top: 10px;
 }
 
 .navbar.navbar-default .navbar-nav>li>a:hover {
@@ -205,8 +210,8 @@ span.highlight {
     font-size: 12px;
     border: solid 2px #000;
     border-radius: 4px;
-    margin-top: 5px;
-    display: inline-block;
+    /*margin-top: 5px;*/
+    /*display: inline-block;*/
 }
 
 .contact:hover {
@@ -219,17 +224,57 @@ span.highlight {
     -o-transition: background-color .13s ease-out;
 }
 
+/*media query to reduce brand image size below 306px width*/
+@media (min-width:306px) {
+    .navbar-brand {
+        /*background-image: url(assets/images/logo.svg);*/
+        /*background-color: #000;*/
+        /*background-position: center;*/
+        /*background-repeat: no-repeat;*/
+        /*background-size: cover;*/
+        margin: 18px 0 30px;
+        width: 200px;
+    }
+}
+
+/*media query to reduce brand image size below 356px width*/
+@media (min-width:356px) {
+    .navbar-brand {
+        /*background-image: url(assets/images/logo.svg);*/
+        /*background-color: #000;*/
+        /*background-position: center;*/
+        /*background-repeat: no-repeat;*/
+        /*background-size: cover;*/
+        margin: 15px 0 30px;
+        width: 250px;
+    }
+}
+
 @media (min-width:768px) {
+    .navbar-brand {
+        /*background-image: url(assets/images/logo.svg);*/
+        /*background-color: #000;*/
+        /*background-position: center;*/
+        /*background-repeat: no-repeat;*/
+        /*background-size: cover;*/
+        margin: 10px 0 30px;
+        width: 300px;
+    }
+
     .navbar.navbar-default .navbar-nav>li>a {
         /*color: #405a74;*/
         /*font-size: 15px;*/
-        margin-left: 0;
+        /*margin-left: 0;*/
         padding-top: 36px;
         padding-bottom: 36px;
         /*transition: padding .22s ease-out;*/
         /*-webkit-transition: padding .22s ease-out;*/
         /*-moz-transition: padding .22s ease-out;*/
         /*-o-transition: padding .22s ease-out;*/
+    }
+
+    .navbar.navbar-default .navbar-nav>li:last-child {
+        margin-top: 0;
     }
 
     .contact {
@@ -827,14 +872,14 @@ textarea.form-control {
     line-height: 22px;
 }
 
-.bg-footer ul {
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
-}
+/*.bg-footer ul {
+    padding: 10px;
+}*/
 
 .bg-footer ul li a {
     color: #3a536b;
+    font-size: 15px;
+    margin: 0 2px;
 }
 
 .bg-footer ul li a:hover {
@@ -850,6 +895,22 @@ textarea.form-control {
 .border-right {
     display: none;
 }
+
+/*reduce number of footer links on small screen*/
+
+/*.list-inline > li:nth-of-type(2) > a,
+.list-inline > li:nth-of-type(5) > a {
+    display: none;
+}*/
+
+/*increase number of footer links from medium screen up*/
+
+/*@media (min-width:330px) {
+    .list-inline>li:nth-of-type(2) > a,
+    .list-inline>li:nth-of-type(5) > a {
+        display: block;
+    }
+}*/
 
 @media (min-width:768px) {
     .copyright {
