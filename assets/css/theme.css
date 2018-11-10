@@ -1,20 +1,8 @@
 /* 
 Document   : theme.css
-Author     : Mamoot Studio
+Author     : Mamoot Studio - Modified by Thomas Jones
 Description: Style-Layout
 */
-
-/* Table of Content
-==================================================
-#GENERAL
-#NAVBAR
-#INTRO
-#PORTFOLIO
-#SKILLS
-#SERVICES
-#CONTACT
-#SOCIAL
-#FOOTER
 
 /* GENERAL */
 
@@ -63,7 +51,6 @@ hr {
     margin-bottom: 40px;
 }
 
-
 .page-title {
     margin-top: 0;
     color: #FF9404;
@@ -109,17 +96,17 @@ span.highlight {
     }
 }
 
+/*GENERAL-END*/
+
 /* NAVBAR */
 
 .navbar-default {
     background-color: rgba(0, 0, 0, .96);
     border-bottom: 10px solid #202020;
-    /*box-shadow*/
     -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.08);
     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.08);
     min-height: 92px;
-    /*transition*/
     -webkit-transition: height .22s ease-out;
     -moz-transition: height .22s ease-out;
     -o-transition: height .22s ease-out;
@@ -130,16 +117,6 @@ span.highlight {
     border-bottom: 4px solid #ff9f1e;
     min-height: 56px;
 }
-
-/*.navbar-brand {
-    margin-top: 0;
-    padding-top: 0;
-}*/
-
-/* .navbar-brand img {
-    width: 30%;
-    margin-top: 40px;
-}*/
 
 /*change color and position of hamburger icon-bar*/
 
@@ -189,6 +166,13 @@ span.highlight {
     -o-transition: padding .22s ease-out;
 }
 
+/*overriding bootstrap styles for responsive collapsed navbar*/
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #ffcd37;
+}
+
 /*add extra margin above contact link on small screen*/
 
 .navbar.navbar-default .navbar-nav>li:last-child {
@@ -210,8 +194,6 @@ span.highlight {
     font-size: 12px;
     border: solid 2px #000;
     border-radius: 4px;
-    /*margin-top: 5px;*/
-    /*display: inline-block;*/
 }
 
 .contact:hover {
@@ -227,11 +209,6 @@ span.highlight {
 /*media query to reduce brand image size below 306px width*/
 @media (min-width:306px) {
     .navbar-brand {
-        /*background-image: url(assets/images/logo.svg);*/
-        /*background-color: #000;*/
-        /*background-position: center;*/
-        /*background-repeat: no-repeat;*/
-        /*background-size: cover;*/
         margin: 18px 0 30px;
         width: 200px;
     }
@@ -240,11 +217,6 @@ span.highlight {
 /*media query to reduce brand image size below 356px width*/
 @media (min-width:356px) {
     .navbar-brand {
-        /*background-image: url(assets/images/logo.svg);*/
-        /*background-color: #000;*/
-        /*background-position: center;*/
-        /*background-repeat: no-repeat;*/
-        /*background-size: cover;*/
         margin: 15px 0 30px;
         width: 250px;
     }
@@ -252,25 +224,13 @@ span.highlight {
 
 @media (min-width:768px) {
     .navbar-brand {
-        /*background-image: url(assets/images/logo.svg);*/
-        /*background-color: #000;*/
-        /*background-position: center;*/
-        /*background-repeat: no-repeat;*/
-        /*background-size: cover;*/
         margin: 10px 0 30px;
         width: 300px;
     }
 
     .navbar.navbar-default .navbar-nav>li>a {
-        /*color: #405a74;*/
-        /*font-size: 15px;*/
-        /*margin-left: 0;*/
         padding-top: 36px;
         padding-bottom: 36px;
-        /*transition: padding .22s ease-out;*/
-        /*-webkit-transition: padding .22s ease-out;*/
-        /*-moz-transition: padding .22s ease-out;*/
-        /*-o-transition: padding .22s ease-out;*/
     }
 
     .navbar.navbar-default .navbar-nav>li:last-child {
@@ -279,11 +239,7 @@ span.highlight {
 
     .contact {
         padding: 7px 10px;
-        /*background-color: #202020;*/
-        /*color: #ff9f1e;*/
         font-size: 14px;
-        /*border: solid 2px #000;*/
-        /*border-radius: 4px;*/
     }
 }
 
@@ -377,6 +333,10 @@ span.highlight {
         top: 0px;
     }
 }
+
+/*ANIMATION-END*/
+
+/*ARROW*/
 
 .arrow-down {
     width: 0;
@@ -474,7 +434,7 @@ span.highlight {
     }
 }
 
-/* UNIQUE SELLING POINT */
+/* UNIQUE-SELLING-POINT */
 
 .usp h5 {
     color: #405a74;
@@ -522,6 +482,8 @@ span.highlight {
         margin: 0 15px;
     }
 }
+
+/* UNIQUE-SELLING-POINT-END */
 
 /* PACKAGES */
 
@@ -618,12 +580,6 @@ span.highlight {
 
 @media (min-width:768px) {
     .nav-tabs>li>a {
-        /*color: #FF9404;*/
-        /*cursor: default;*/
-        /*background-color: #3b3b3b;*/
-        /*border: none;*/
-        /*border: 0;*/
-        /*border-bottom-color: transparent;*/
         font-size: 18px;
         padding: 10px 40px;
     }
@@ -671,9 +627,9 @@ span.highlight {
     margin-top: 15px;
 }
 
+/*ugly fix to position mobile icon correctly*/
 .font-awesome-icon--services>.fa-mobile {
     margin: -10px;
-    /*ugly fix to position mobile icon correctly*/
 }
 
 .services {
@@ -773,7 +729,7 @@ textarea.form-control {
     background-color: #202020;
     color: #ff9f1e;
     font-size: 14px;
-    padding: 6px;
+    padding: 6px 12px;
     border: solid 2px #000;
     border-radius: 4px;
 }
@@ -794,19 +750,6 @@ textarea.form-control {
     margin-top: 10px;
 }
 
-/*@media (max-width:767px) {
-
-    .bg-contact h3 {
-        display: block;
-        margin: 0;
-        margin-bottom: 32px;
-    }
-
-    .bg-contact .mail {
-        margin: 0;
-    }
-}*/
-
 /* SOCIAL */
 
 .bg-social {
@@ -816,16 +759,23 @@ textarea.form-control {
     padding-bottom: 60px;
 }
 
+.social-link {
+    border-width: 6px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
 .social-link .fa {
     color: #ff9f1e;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
     border: solid 4px #405A74;
-    font-size: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: solid 2px #3a536b;
+    font-size: 30px;
+    padding-top: 8px;
+    margin-right: 10px;
     text-align: center;
-    padding-top: 12px;
-    margin-right: 20px;
     text-decoration: none;
     transition: all .1s linear;
     -webkit-transition: all .1s linear;
@@ -838,21 +788,13 @@ textarea.form-control {
     color: #FF4C04;
 }
 
-@media (max-width:767px) {
-
-    .social-link {
-        border-width: 6px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-
+@media (min-width:768px) {
     .social-link .fa {
-        width: 50px;
-        height: 50px;
-        border: solid 2px #3a536b;
-        font-size: 30px;
-        padding-top: 8px;
-        margin-right: 10px;
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
+        padding-top: 12px;
+        margin-right: 20px;
     }
 }
 
@@ -860,9 +802,15 @@ textarea.form-control {
 
 /* FOOTER */
 
+.bg-footer .copyright {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
 .bg-footer {
     background-color: #000;
-    padding-top: 32px;
+    border-right: 1px solid #3a536b;
+    padding: 32px 12px 0 0;
 }
 
 .copyright {
@@ -872,9 +820,10 @@ textarea.form-control {
     line-height: 22px;
 }
 
-/*.bg-footer ul {
-    padding: 10px;
-}*/
+.bg-footer ul {
+    text-align: center;
+    float: none !important;
+}
 
 .bg-footer ul li a {
     color: #3a536b;
@@ -882,35 +831,24 @@ textarea.form-control {
     margin: 0 2px;
 }
 
+/*create more space between footer links on small screens above 303px width*/
+
+@media (min-width:303px) {
+    .bg-footer ul li a {
+        color: #3a536b;
+        font-size: 16px;
+        margin: 0 12px;
+    }
+}
+
 .bg-footer ul li a:hover {
     color: #ff9f1e;
     text-decoration: none;
 }
 
-.bg-footer {
-    border-right: 1px solid #3a536b;
-    padding-right: 12px;
-}
-
 .border-right {
     display: none;
 }
-
-/*reduce number of footer links on small screen*/
-
-/*.list-inline > li:nth-of-type(2) > a,
-.list-inline > li:nth-of-type(5) > a {
-    display: none;
-}*/
-
-/*increase number of footer links from medium screen up*/
-
-/*@media (min-width:330px) {
-    .list-inline>li:nth-of-type(2) > a,
-    .list-inline>li:nth-of-type(5) > a {
-        display: block;
-    }
-}*/
 
 @media (min-width:768px) {
     .copyright {
@@ -928,19 +866,9 @@ textarea.form-control {
         padding-right: 12px;
     }
 
-
-}
-
-@media (max-width:767px) {
-
-    .bg-footer .copyright {
-        text-align: center;
-        margin-bottom: 16px;
+    .bg-footer ul li a {
+        color: #3a536b;
+        font-size: 15px;
+        margin: 0 2px;
     }
-
-    .bg-footer ul {
-        text-align: center;
-        float: none !important;
-    }
-
 }
