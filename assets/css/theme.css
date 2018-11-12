@@ -7,8 +7,14 @@ Description: Style-Layout
 /* GENERAL */
 
 body {
-    padding-top: 0;
+    background-color: #0a1926;
     font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding-top: 0;
+    max-width: 1200px;
+}
+
+header {
     background-color: #000;
 }
 
@@ -94,6 +100,11 @@ span.highlight {
     .margin-bottom-xs {
         margin-bottom: 0;
     }
+}
+
+/*larger font size on large screens*/
+@media (min-width:992px) {
+    p { font-size: 16px; }
 }
 
 /*GENERAL-END*/
@@ -534,7 +545,7 @@ span.highlight {
 /*TABS*/
 
 .section--tabs {
-    padding: 0px;
+    padding: 0 0 5px;
 }
 
 .nav-tabs>li {
@@ -745,10 +756,10 @@ textarea.form-control {
     transition: all .1s linear;
 }
 
-.error {
+/*.error {
     color: #F82C2C;
     margin-top: 10px;
-}
+}*/
 
 /* SOCIAL */
 
