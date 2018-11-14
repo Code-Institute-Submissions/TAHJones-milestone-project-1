@@ -472,6 +472,17 @@ span.highlight {
     }
 }
 
+@media (min-width:768px) {
+    .about-img {
+        /*position: relative;*/
+        /*height: 100%;*/
+        /*width: 82%;*/
+        margin: 70px 0 100px;
+        /*box-sizing: content-box;*/
+    }
+}
+
+
 @media (min-width:992px) {
     .page-title--about {
         font-size: 35px;
@@ -479,15 +490,10 @@ span.highlight {
         text-align: left;
     }
 
-    /*.about-img {*/
-    /*    margin: 60px 0;*/
-    /*}*/
     .about-img {
-        position: relative;
-        height: 120%;
-        width: 102%;
-        margin: 60px 0;
-        box-sizing: content-box;
+        height: 110%;
+        width: 92%;
+        margin: 60px 0 0 40px;
     }
 }
 
@@ -543,6 +549,7 @@ span.highlight {
 }
 
 /*usp layout & styles for medium screen*/
+
 @media (min-width: 768px) {
     .font-awesome-icon {
         margin: 0 0 30px;
@@ -560,13 +567,13 @@ span.highlight {
 }
 
 /*usp header styles for large screen*/
+
 @media (min-width: 992px) {
     /*.font-awesome-icon {
         margin: 0 0 30px;
         text-align: center;
         font-size: 14px;
     }*/
-
     .usp h5 {
         font-size: 18px;
         /*margin: 10px 0 20px;*/
@@ -587,7 +594,7 @@ span.highlight {
     margin: 0 auto;
     padding: 5px;
     text-align: center;
-    max-width: 70%;
+    max-width: 90%;
 }
 
 .package>h4 {
@@ -615,6 +622,14 @@ span.highlight {
     margin: 0 auto;
     padding: 0;
     width: 90%;
+}
+
+/*reduce packages divs width on small screens 380px and above*/
+
+@media (min-width:380px) {
+    .package {
+        max-width: 70%;
+    }
 }
 
 @media (min-width:768px) {
@@ -810,163 +825,236 @@ span.highlight {
 
     /*.services>p {
         text-align: left;
-    }
+    }*/
 }
 
 /* SERVICES-END */
-    /* CONTACT */
-    .bg-contact {
-        background-color: #000;
-        color: #FFCD37;
-        padding-bottom: 50px;
-    }
 
-    .page-title--contact {
-        margin-top: 100px;
-    }
+/* CONTACT */
 
-    #contact-form {
-        margin-bottom: 40px;
-    }
+.bg-contact {
+    background-color: #000;
+    color: #FFCD37;
+    padding-bottom: 50px;
+}
 
-    .form-control {
-        display: block;
-        width: 100%;
-        height: 45px;
-        padding: 6px 12px;
-        font-size: 14px;
-        line-height: 1.42857143;
-        color: #555;
-        background-color: #b3aea0;
-        background-image: none;
-        border: 4px solid #bbb;
-    }
+.page-title--contact {
+    margin-top: 100px;
+}
 
-    .form-control:focus {
-        background-color: #EAE2E2;
-        ;
-        color: #555;
-        border: solid 3px #ccc;
-    }
+#contact-form {
+    margin-bottom: 40px;
+}
 
-    .form-control::-moz-placeholder {
-        color: #666;
-        opacity: 1;
-    }
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #b3aea0;
+    background-image: none;
+    border: 4px solid #bbb;
+}
 
-    .form-control:-ms-input-placeholder {
-        color: #666;
-    }
+.form-control:focus {
+    background-color: #EAE2E2;
+    color: #555;
+    border: solid 3px #ccc;
+}
 
-    .form-control::-webkit-input-placeholder {
-        color: #666;
-    }
+.form-control::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
 
-    .form-control::-ms-expand {
-        background-color: transparent;
-        border: 0;
-    }
+.form-control:-ms-input-placeholder {
+    color: #666;
+}
 
-    textarea.form-control {
-        height: 200px;
-    }
+.form-control::-webkit-input-placeholder {
+    color: #666;
+}
 
-    .btn-submit,
-    .btn-reset {
-        background-color: #202020;
-        color: #ff9f1e;
-        font-size: 14px;
-        padding: 6px 12px;
-        border: solid 2px #000;
-        border-radius: 4px;
-    }
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
 
-    .btn-submit:hover,
-    .btn-reset:hover {
-        background-color: #000;
-        border: solid 2px #405A74;
-        color: #FF4C04;
-        -webkit-transition: all .1s linear;
-        -moz-transition: all .1s linear;
-        -o-transition: all .1s linear;
-        transition: all .1s linear;
-    }
+textarea.form-control {
+    height: 200px;
+}
 
-    /*.error {
+.btn-submit,
+.btn-reset {
+    background-color: #202020;
+    color: #ff9f1e;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: solid 2px #000;
+    border-radius: 4px;
+}
+
+.btn-submit:hover,
+.btn-reset:hover {
+    background-color: #000;
+    border: solid 2px #405A74;
+    color: #FF4C04;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+/*.error {
     color: #F82C2C;
     margin-top: 10px;
 }*/
-    /*CONTACT-END*/
-    /* SOCIAL */
-    .bg-social {
-        background-color: #202020;
-        text-align: center;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
 
-    .social-link {
-        border-width: 6px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
+/*CONTACT-END*/
 
+/* SOCIAL */
+
+.bg-social {
+    background-color: #202020;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.social-link {
+    border-width: 6px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.social-link .fa {
+    color: #ff9f1e;
+    border: solid 4px #405A74;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: solid 2px #3a536b;
+    font-size: 30px;
+    padding-top: 8px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+}
+
+.social-link .fa:hover {
+    background-color: #000;
+    color: #FF4C04;
+}
+
+@media (min-width:480px) {
     .social-link .fa {
-        color: #ff9f1e;
-        border: solid 4px #405A74;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        border: solid 2px #3a536b;
-        font-size: 30px;
-        padding-top: 8px;
-        margin-right: 10px;
-        text-align: center;
-        text-decoration: none;
-        transition: all .1s linear;
-        -webkit-transition: all .1s linear;
-        -moz-transition: all .1s linear;
-        -o-transition: all .1s linear;
+        width: 65px;
+        height: 65px;
+        font-size: 38px;
+        padding-top: 12px;
+        margin-right: 20px;
     }
+}
 
-    .social-link .fa:hover {
-        background-color: #000;
-        color: #FF4C04;
+@media (min-width:768px) {
+    .social-link .fa {
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
+        /*padding-top: 12px;*/
+        /*margin-right: 20px;*/
     }
+}
 
-    @media (min-width:768px) {
-        .social-link .fa {
-            width: 80px;
-            height: 80px;
-            font-size: 50px;
-            padding-top: 12px;
-            margin-right: 20px;
-        }
+/* SOCIAL-END */
+
+/* FOOTER */
+
+.bg-footer .copyright {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.bg-footer {
+    background-color: #000;
+    border-right: 1px solid #3a536b;
+    padding: 32px 12px 0 0;
+}
+
+.copyright {
+    padding: 0;
+    color: #3a536b;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.bg-footer ul {
+    text-align: center;
+    float: none !important;
+}
+
+.bg-footer ul li a {
+    color: #3a536b;
+    font-size: 14px;
+    margin: 0 2px;
+}
+
+/*create more space between footer links on small screens above 303px width*/
+
+@media (min-width:303px) {
+    .bg-footer ul li a {
+        font-size: 14px;
+        margin: 0 6px;
     }
+}
 
-    /* SOCIAL-END */
-    /* FOOTER */
+/*increase size and space around footer links on small screens above 480px width*/
+@media (min-width:480px) {
+    .bg-footer ul li a {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+}
+
+.bg-footer ul li a:hover {
+    color: #ff9f1e;
+    text-decoration: none;
+}
+
+.border-right {
+    /*display: none;*/
+    border-right: 1px solid #3a536b;
+}
+
+/*remove link divider on third visible link for small screen*/
+
+.border-right:nth-of-type(4) {
+    border-right: none;
+}
+
+@media (min-width:768px) {
     .bg-footer .copyright {
-        text-align: center;
-        margin-bottom: 16px;
+        text-align: right;
+        margin: 0 20px 15px 0;
     }
 
-    .bg-footer {
-        background-color: #000;
+    .border-right {
+        /*display: inline;*/
         border-right: 1px solid #3a536b;
-        padding: 32px 12px 0 0;
+        /*padding-right: 12px;*/
     }
 
-    .copyright {
-        padding: 0;
-        color: #3a536b;
-        font-size: 12px;
-        line-height: 22px;
-    }
-
-    .bg-footer ul {
-        text-align: center;
-        float: none !important;
+    /*add link divider on fourth visible link for medium screen*/
+    .border-right:nth-of-type(4) {
+        border-right: 1px solid #3a536b;
+        /*border-right: none;*/
     }
 
     .bg-footer ul li a {
@@ -974,44 +1062,16 @@ span.highlight {
         font-size: 15px;
         margin: 0 2px;
     }
+}
 
-    /*create more space between footer links on small screens above 303px width*/
-    @media (min-width:303px) {
-        .bg-footer ul li a {
-            color: #3a536b;
-            font-size: 16px;
-            margin: 0 12px;
-        }
+@media (min-width:992px) {
+    .copyright {
+        font-size: 14px;
     }
 
-    .bg-footer ul li a:hover {
-        color: #ff9f1e;
-        text-decoration: none;
+    .bg-footer ul li a {
+        /*color: #3a536b;*/
+        font-size: 16px;
+        margin: 0 4px;
     }
-
-    .border-right {
-        display: none;
-    }
-
-    @media (min-width:768px) {
-        .copyright {
-            text-align: right;
-            margin-right: 15px;
-        }
-
-        .bg-footer ul {
-            font-size: 15px;
-        }
-
-        .border-right {
-            display: inline;
-            border-right: 1px solid #3a536b;
-            padding-right: 12px;
-        }
-
-        .bg-footer ul li a {
-            color: #3a536b;
-            font-size: 15px;
-            margin: 0 2px;
-        }
-    }
+}
