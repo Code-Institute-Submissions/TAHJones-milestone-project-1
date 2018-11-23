@@ -300,8 +300,8 @@ span.highlight {
 
 .bg-banner {
     color: #FFF;
-    background-image: url(assets/images/bg.jpg);
     background-color: rgb(34, 49, 63);
+    background-image: url(assets/images/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
