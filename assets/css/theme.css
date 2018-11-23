@@ -301,7 +301,7 @@ span.highlight {
 .bg-banner {
     color: #FFF;
     background-color: rgb(34, 49, 63);
-    background-image: url(assets/images/bg.jpg);
+    background-image: url(/milestone-project-1/assets/images/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
