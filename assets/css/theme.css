@@ -175,6 +175,12 @@ span.highlight {
     background-color: #FF4C04;
 }
 
+@media screen\0 {	
+    .navbar-header {
+        box-sizing: content-box;
+    }
+}
+
 .navbar-brand {
     background-image: url(assets/images/logo.svg);
     background-color: #000;
