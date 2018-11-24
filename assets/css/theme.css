@@ -4,6 +4,15 @@ Author     : Mamoot Studio - Modified by Thomas Jones
 Description: Style-Layout
 */
 
+/*fix for navbar logo in IE11*/
+@media screen\0 {
+    * {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+}
+
 /* GENERAL */
 
 body {
@@ -173,12 +182,6 @@ span.highlight {
 
 .navbar-default .navbar-toggle .icon-bar:hover {
     background-color: #FF4C04;
-}
-
-@media screen\0 {	
-    .navbar-header {
-        box-sizing: content-box;
-    }
 }
 
 .navbar-brand {
@@ -1021,6 +1024,7 @@ textarea.form-control {
 }
 
 /*increase size and space around footer links on small screens above 480px width*/
+
 @media (min-width:480px) {
     .bg-footer ul li a {
         font-size: 15px;
