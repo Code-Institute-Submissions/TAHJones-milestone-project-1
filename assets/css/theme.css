@@ -287,8 +287,8 @@ span.highlight {
 .bg-banner {
     color: #FFF;
     background-color: rgb(34, 49, 63);
-    /*background-image: url(/milestone-project-1/assets/images/bg.jpg)*/  /* works for github pages*/
-    background-image: url(/assets/images/bg.jpg); /*works for cloud9*/
+    background-image: url(/milestone-project-1/assets/images/bg.jpg);  /* works for github pages*/
+    /*background-image: url(/assets/images/bg.jpg);*/ /*works for cloud9*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
