@@ -47,6 +47,7 @@ HTML and CSS - Design and Build Websites - Jon Duckett
 CSS Master - Tiffany Brown - Sitepoint
 Mastering Bootstrap 4 - Benjamin Jakobus, Jason Marah - Packt Books
 W3schools - General Reference
+W3schools - https://www.w3schools.com/howto/howto_css_image_overlay.asp
 
 Tested in the following browsers; Firefox, Chrome/Chromium, Opera, Safari & IE11
 

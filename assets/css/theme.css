@@ -328,61 +328,6 @@ span.highlight {
     text-align: center;
 }
 
-/* ANIMATION */
-
-@-webkit-keyframes bounceInUp {
-    0% {
-        opacity: 0;
-        top: 1000px;
-    }
-
-    60% {
-        opacity: 1;
-        top: -30px;
-    }
-
-    80% {
-        top: 10px;
-    }
-
-    100% {
-        top: 0px;
-    }
-}
-
-@keyframes bounceInUp {
-    0% {
-        opacity: 0;
-        top: 1000px;
-    }
-
-    60% {
-        opacity: 1;
-        top: -30px;
-    }
-
-    80% {
-        top: 10px;
-    }
-
-    100% {
-        top: 0px;
-    }
-}
-
-/*ANIMATION-END*/
-
-/*ARROW*/
-
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-top: 20px solid #35404C;
-    margin: 0 auto;
-}
-
 @media (min-width:768px) {
 
     .banner-title {
@@ -602,7 +547,7 @@ span.highlight {
 /* PACKAGES */
 
 .package {
-    background-color: #ECF9BF;
+    background-color: #EEF6D4;
     border: 6px solid #405a74;
     border-radius: 4px;
     margin: 0 auto;
@@ -636,6 +581,30 @@ span.highlight {
     margin: 0 auto;
     padding: 0;
     width: 90%;
+}
+
+.package-contact {
+    display: block;
+    margin: 80px auto 20px;
+    width: 10%;
+}
+
+.package-contact .contact {
+    background-color: #3b3b3b;
+    border: solid 3px #3b3b3b;
+    color: #ff9f1e;
+    padding: 12px 24px;
+    font-size: 22px;
+}
+
+.package-contact .contact:hover {
+    background-color: #000;
+    color: #FF4C04;
+    border-color: #405a74;
+    transition: all .35s ease-in;
+    -webkit-transition: all .35s ease-in;
+    -moz-transition: all .35s ease-in;
+    -o-transition: all .35s ease-in;
 }
 
 /*reduce packages divs width on small screens 380px and above*/
