@@ -435,18 +435,18 @@ span.highlight {
     margin: 0 auto;
 }
 
-
 .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 0%;
+    right: 0%;
     height: 100%;
-    width: 100%;
+    max-width: 80%;
     opacity: 0;
     transition: .5s ease-in-out;
     background-color: rgba(0, 0, 0, .5);
+    margin: 0 auto;
 }
 
 .overlay-container-1:hover .overlay {
@@ -477,7 +477,11 @@ span.highlight {
     .portfolio-img {
         max-width: 100%;
     }
-    
+
+    .overlay {
+        max-width: 100%;
+    }
+
     .overlay-text {
         font-size: 28px;
     }
