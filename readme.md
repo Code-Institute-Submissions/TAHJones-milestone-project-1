@@ -16,6 +16,13 @@ Modifications - The scrolling page was originally longer but this caused problem
 3rd Party Code - The site was built from a bootstrap 3 desktop first template which has been customised. Few of the original features of the template remain; only the fixed navbar, the main title/banner (boundInUp) animation and the banner arrow effect have been kept along with some of the basic bootstrap grid layout. The desktop first design has been changed to mobile first. The colour scheme, typography and content are original except for the skills and services sections which have been customised.
 
 
+Wireframes:
+
+Originally written out by hand, then redone using http://framebox.org/.
+
+Desktop wireframe - http://framebox.org/AhzLI
+Mobile wireframe - http://framebox.org/AhzLR
+
 Technologies used:
 
 HTML5
